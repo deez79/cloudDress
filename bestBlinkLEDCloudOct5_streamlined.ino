@@ -64,15 +64,14 @@ int delayPeriod;
 // the setup routine runs once when you press reset:
 void setup() {                
 
-  
   for(int p=0; p<sectionCount; p++)
   {
     pinMode(top[p], OUTPUT); // Set the mode to OUTPUT
     pinMode(middle[p], OUTPUT); // Set the mode to OUTPUT
     pinMode(bottom[p], OUTPUT); // Set the mode to OUTPUT
   }
-  
-}
+}    // end SETUP
+
 
 // the loop routine runs over and over again forever:
 void loop() {
@@ -84,14 +83,12 @@ void loop() {
     OffApp(bottom);
     
     delay(delayPeriod);       // Wait for random period between flashes. (1000mS = 1 second)
-    
-    
+
 //bottom flash on
     FlashOnApp(bottom);
 
 //top flash on 
     FlashOnApp(top);
-    
 
 //bottom off; middle on
     delay(flashT);    
@@ -103,7 +100,14 @@ void loop() {
     OffApp(top);
     OffApp(middle);
     
-} //end LOOP
+}   //end LOOP
+
+// ////////////////////////////////////////////
+//
+// create functions that flash LEDs
+//
+// ////////////////////////////////////////////
+
 
 void FlashOnApp(int ledPins[]){
     delay(flashT);
