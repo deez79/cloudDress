@@ -1,6 +1,6 @@
 /* ##############################################################################
 
-    Stormtest.ino v1
+    cloudDress.ino v1
         Two seperate pins are used to run multimple LEDs.  One set will be
             constantly on.  The other set will flash at variable intervals.
             
