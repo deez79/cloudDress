@@ -1,8 +1,10 @@
 /* ##############################################################################
 
     cloudDress.ino v1
-        Two seperate pins are used to run multimple LEDs.  One set will be
-            constantly on.  The other set will flash at variable intervals.
+    Three seperate groups of pins are used to run multimple LEDs. 
+        They are broken into Top, Middle, and Bottom.  
+        They flash in order of Bottom, Top, then Middle in an attempt 
+          to mimic clouds.
             
     Wireing
         LED Anodes are connected to 5v rail while 
