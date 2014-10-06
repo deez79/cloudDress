@@ -120,18 +120,18 @@ void FlashOnApp(int ledPins[]){
 
     delay(flashT);
     OnApp(ledPins);
-}
+}    // end FlashOnApp
 
 void OnApp(int ledPins[]){
     for(int t=0; t<sectionCount; t++) //Flash on
     {
       digitalWrite(ledPins[t], LOW);   //Turn ON the bottom LEDs  
     }
-}
+}    // end OnApp
 
 void OffApp(int ledPins[]){
     for(int t=0; t<sectionCount; t++) //Flash off
     {
       digitalWrite(ledPins[t], HIGH);   //Turn OFF the bottom LEDs   
     }
-}
+}    // end OffApp
