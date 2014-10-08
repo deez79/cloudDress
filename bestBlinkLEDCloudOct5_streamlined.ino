@@ -49,7 +49,9 @@
                                                 Create Date:        10/05/2014
 ################################################################################# */
 
- 
+ //create array of all pins that will be used
+ int allPins[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+ int pinCount = 12;
 
 
 //set led pins in sections
@@ -66,11 +68,9 @@ int delayPeriod;
 // the setup routine runs once when you press reset:
 void setup() {                
 
-  for(int p=0; p<sectionCount; p++)
+  for(int p=0; p<pinCount; p++)
   {
-    pinMode(top[p], OUTPUT); // Set the mode to OUTPUT
-    pinMode(middle[p], OUTPUT); // Set the mode to OUTPUT
-    pinMode(bottom[p], OUTPUT); // Set the mode to OUTPUT
+      pinMode(allPins[p], OUTPUT); //set the pinmode for all pins too OUTPUT
   }
 }    // end SETUP
 
